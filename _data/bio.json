@@ -1,44 +1,50 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
+    "name": "Chuangye Liu",
     "label": "Student",
-    "picture": "https://github.com/kambergjohnson.png",
-    "email": "molly@hawaii.edu",
-    "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2024.",
-    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "picture": "https://github.com/geniusdo/EmbeddedMath/blob/main/docs/ai_generated_logo.png",
+    "email": "chuangyeliu0206@gmail.com", 
+    "phone": "000-000-000",
+    "website": "https://geniusdo.github.io",
+    "summary": "I am studying for a M.S. in Electronic Engineering in the Department of Electronic Information at the Wuhan University. I expect to graduate in Summer, 2026.",
+    "location": { "address": "", "postalCode": "430072", "city": "Wuhan", "countryCode": "CN", "region": "Hubei" },
     "profiles": [
-      { "network": "github", "username": "mmaluhia", "url": "http://github.com/changeme" },
-      { "network": "linkedin", "username": "mollymaluhia", "url": "http://linkedin.com/in/changeme" },
-      { "network": "twitter", "username": "mollymal", "url": "http://twitter.com/changeme" },
-      { "network": "instagram", "username": "molly", "url": "http://instagram.com/changeme" }
+      { "network": "github", "username": "geniusdo", "url": "http://github.com/geniusdo" }
     ]
   },
   "interests": [
-    { "name": "Interactive media" },
-    { "name": "Neuromorphic Computing" },
-    { "name": "Quantum Computing" },
+    { "name": "State Estimation" },
+    { "name": "Virtual Reality" },
+    { "name": "Embedded System" },
     { "name": "Robotics" },
     { "name": "3D Graphics" }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Assembly", "Common Lisp" ]
+      "keywords": [ "C", "C++", "Python", "Matlab", "Assembly", "Verilog" ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "g++", "TI LaunchPad" ]
+      "keywords": [ "KiCAD", "Linux", "Git", "gnu", "Nuttx", "Simulink", "OpenGL", "ROS&ROS2" ]
     }
   ],
   "education": [
     {
-      "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
+      "institution": "Wuhan University, Wuhan, China",
+      "area": "Electronic Engineering",
       "studyType": "B.S.",
-      "startDate": "2013-09-01",
-      "endDate": "Present",
+      "startDate": "2020-09",
+      "endDate": "2024-06",
+      "courses": [
+      ]
+    },
+    {
+      "institution": "Wuhan University, Wuhan, China",
+      "area": "Electronic Engineering",
+      "studyType": "M.S.",
+      "startDate": "2024-09",
+      "endDate": "2026-06",
       "courses": [
       ]
     }
