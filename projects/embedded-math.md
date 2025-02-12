@@ -7,14 +7,13 @@ date: 2025
 published: true
 labels:
   - Linear Algebra
-  - Embedded Systen
+  - Embedded System
   - C++
-summary: "A C++ header only linear algebra math library for embedded device."
+summary: "A C++ header only linear algebra math library for embedded device, utilizing C++ meta-programming."
 ---
 
-# EmbeddedMath
 <p align="left">
-  <img src="../img/EmbeddedMath/ai_generated_logo.png" width="20%" height="auto" alt="LOGO">
+  <img src="../img/EmbeddedMath/ai_generated_logo.png" width="40%" height="auto" alt="LOGO">
 </p>   
 
 <!-- [English](README.md) | [简体中文](docs/README.zh_CN.md)  
@@ -75,8 +74,5 @@ A typical example of this library is to implement a kalman filter, which can be 
 - Posix math library (e.g., `math.h`)
 
 
-## License:
-The code is under Apache License 2.0.
-
-#### Any issues or suggestions, please open an issue or PR.
-*Give me a star if you like it!* 
+## Source:
+Source: <a href="https://github.com/geniusdo/EmbeddedMath">EmbeddedMath</a>
