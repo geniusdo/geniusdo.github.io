@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/reconstruction/drone.png
+image: img/reconstruction/drone.jpg
 title: "Realtime Colored Pointcloud Reconstruction"
 date: 2023
 published: true
