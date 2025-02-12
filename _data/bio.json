@@ -2,7 +2,7 @@
   "basics": {
     "name": "Chuangye Liu",
     "label": "Student",
-    "picture": "img/good_pfp.jpg",
+    "picture": "../img/good_pfp.jpg",
     "email": "chuangyeliu0206@gmail.com",
     "phone": "000-000-000",
     "website": "https://geniusdo.github.io",
