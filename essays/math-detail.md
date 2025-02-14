@@ -50,14 +50,14 @@ $$P:\begin{pmatrix}
 
 #### 4. LUP decomposition
 
-Firstly, we perform partial pivoting on the matrix $A$, the permutation matrix is denoted as $P_{1}$. so $\overline{A}=AP_{1}$. The next permutation matrix $P_{2}$ shall be written as 
+Firstly, we perform partial pivoting on the matrix $A$, the permutation matrix is denoted as $P_{1}$. so $\overline{A}=AP_{1}$. The next permutation matrix $P_{2}$ shall be written as  
 $$P_{2} =\begin{pmatrix}
 1 & \textbf{0}   \\
 \textbf{0} & P_{22} \\
  \end{pmatrix},$$
-where $P_{22}$ is an $(n-1)\times(n-1)$ permutation matrix. So the overall permutation matrix is $P = P_{1}P_{2}$.  We can write the LUP decomposition as
-$$AP = LU$$
-$$\overline{A}P_{2} = LU$$
+where $P_{22}$ is an $(n-1)\times(n-1)$ permutation matrix. So the overall permutation matrix is $P = P_{1}P_{2}$.  We can write the LUP decomposition as  
+$$AP = LU$$  
+$$\overline{A}P_{2} = LU$$  
 $$
  \begin{pmatrix}
 \overline{a}_{11} & \overline{\boldsymbol{a}}_{12}   \\
@@ -77,7 +77,7 @@ $$
 \begin{pmatrix}
 1 & \boldsymbol{u}_{12}   \\
 0 & {U}_{22} \\
- \end{pmatrix}$$
+ \end{pmatrix}$$  
 
  $$\begin{pmatrix}
 \overline{a}_{11} & \overline{\boldsymbol{a}}_{12}P_{22}   \\
@@ -87,19 +87,19 @@ $$
 {l}_{11} & l_{11}\boldsymbol{u}_{12}   \\
 \boldsymbol{l}_{21} & \boldsymbol{l}_{21}\boldsymbol{u}_{12}+{L}_{22}U_{22} \\
  \end{pmatrix}
- $$
-Equating the corresponding entries, we have
+ $$  
+Equating the corresponding entries, we have  
 $$\overline{a}_{11}=l_{11}$$
-$$\overline{\boldsymbol{a}}_{21} =\boldsymbol{l}_{21}$$
-$$\overline{\boldsymbol{a}}_{12}P_{22}=l_{11}\boldsymbol{u}_{12}$$
-$$\overline{A}_{22}P_{22}=\boldsymbol{l}_{21}\boldsymbol{u}_{12}+{L}_{22}U_{22}$$
-Substituting the first three equations above into the last one, we have
+$$\overline{\boldsymbol{a}}_{21} =\boldsymbol{l}_{21}$$  
+$$\overline{\boldsymbol{a}}_{12}P_{22}=l_{11}\boldsymbol{u}_{12}$$  
+$$\overline{A}_{22}P_{22}=\boldsymbol{l}_{21}\boldsymbol{u}_{12}+{L}_{22}U_{22}$$  
+Substituting the first three equations above into the last one, we have  
 $$S_{22}P_{22}=(\overline{A}_{22}-\overline{\boldsymbol{a}}_{21}(\overline{a}_{11})^{-1}\overline{\boldsymbol{a}}_{12})P_{22}=L_{22}U_{22},$$
 where $S_{22}$ is the shur complement.  
-Recursively decompose $S_{22}$, resulting in $L_{22},U_{22}$ and $P_{22}$. Solve $L$ and $U$ by back substitution.
-$$l_{11}=\overline{a}_{11}$$
-$$\boldsymbol{l}_{21}=\overline{\boldsymbol{a}}_{21}$$
-$$\boldsymbol{u}_{12} =\frac{1}{l_{11}}\overline{\boldsymbol{a}}_{12}P_{22}$$
+Recursively decompose $S_{22}$, resulting in $L_{22},U_{22}$ and $P_{22}$. Solve $L$ and $U$ by back substitution.  
+$$l_{11}=\overline{a}_{11}$$  
+$$\boldsymbol{l}_{21}=\overline{\boldsymbol{a}}_{21}$$  
+$$\boldsymbol{u}_{12} =\frac{1}{l_{11}}\overline{\boldsymbol{a}}_{12}P_{22}$$  
 Finally, reconstruct the full matrices $L$, $U$ and $P$.
 
 #### 5. API
