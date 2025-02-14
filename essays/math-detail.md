@@ -58,36 +58,19 @@ $$P_{2} =\begin{pmatrix}
 where $P_{22}$ is an $(n-1)\times(n-1)$ permutation matrix. So the overall permutation matrix is $P = P_{1}P_{2}$.  We can write the LUP decomposition as  
 $$AP = LU$$  
 $$\overline{A}P_{2} = LU$$  
-$$
- \begin{pmatrix}
-\overline{a}_{11} & \overline{\boldsymbol{a}}_{12}   \\
-\overline{\boldsymbol{a}}_{21}  & \overline{A}_{22} \\
- \end{pmatrix}
- 
- \begin{pmatrix}
-1 & \textbf{0}   \\
-\textbf{0} & P_{22} \\
- \end{pmatrix}= 
-
- \begin{pmatrix}
-{l}_{11} & \textbf{0}   \\
-\boldsymbol{l}_{21} & {L}_{22} \\
- \end{pmatrix}
-
-\begin{pmatrix}
-1 & \boldsymbol{u}_{12}   \\
-0 & {U}_{22} \\
- \end{pmatrix}$$  
-
- $$\begin{pmatrix}
-\overline{a}_{11} & \overline{\boldsymbol{a}}_{12}P_{22}   \\
+$$\begin{pmatrix}\overline{a}_{11}&\overline{\boldsymbol{a}}_{12}\\
+\overline{\boldsymbol{a}}_{21}&\overline{A}_{22} \\
+ \end{pmatrix}\begin{pmatrix}1 & \textbf{0}\\
+\textbf{0} & P_{22}\\
+ \end{pmatrix}= \begin{pmatrix}{l}_{11} & \textbf{0}\\
+\boldsymbol{l}_{21} & {L}_{22}\\
+ \end{pmatrix}\begin{pmatrix}1 & \boldsymbol{u}_{12}\\
+0 & {U}_{22}\end{pmatrix}$$  
+$$\begin{pmatrix}\overline{a}_{11} & \overline{\boldsymbol{a}}_{12}P_{22}\\
 \overline{\boldsymbol{a}}_{21}  & \overline{A}_{22}P_{22} \\
- \end{pmatrix} =
- \begin{pmatrix}
-{l}_{11} & l_{11}\boldsymbol{u}_{12}   \\
+ \end{pmatrix} =\begin{pmatrix}{l}_{11} & l_{11}\boldsymbol{u}_{12}\\
 \boldsymbol{l}_{21} & \boldsymbol{l}_{21}\boldsymbol{u}_{12}+{L}_{22}U_{22} \\
- \end{pmatrix}
- $$  
+ \end{pmatrix}$$  
 Equating the corresponding entries, we have  
 $$\overline{a}_{11}=l_{11}$$
 $$\overline{\boldsymbol{a}}_{21} =\boldsymbol{l}_{21}$$  
