@@ -38,9 +38,15 @@
     </script>
     <script type="text/javascript">
       MathJax = {
+          tex2jax: {
+              inlineMath: [['$','$'], ['\\(','\\)']],
+              displayMath: [['$$','$$'], ['\\[','\\]']],
+              processEscapes: true
+          },
           tex: {
-              inlineMath: [['$', '$']],
-              displayMath: [['$$', '$$']]
+              inlineMath: [['$','$'], ['\\(','\\)']],
+              displayMath: [['$$','$$'], ['\\[','\\]']],
+              processEscapes: true
           },
           svg: { fontCache: 
               'global'
