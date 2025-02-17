@@ -36,8 +36,16 @@
     {% if site.mathjax %}
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
     </script>
-    {% endif %}
+    <script type="text/javascript">
+      MathJax = {
+          tex: {
+              inlineMath: [['$', '$'], ['\(', '\)']],
+              displayMath: [['$$', '$$'], ['\[', '\]']]
 
+          }
+      };
+    </script>
+    {% endif %}
     <title>{{ title }}</title>
   </head>
   <body>
