@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Details of Partial Pivoting LU Decomposition in EmbeddedMaths"
+title: "Details of Partial Pivoting LU Decomposition in EmbeddedMath"
 # All dates must be YYYY-MM-DD format!
 date: 2025-02-14
 published: true
@@ -35,9 +35,9 @@ Note that this change will cause different results from the usual LUP algorithm.
 
 #### 3. Permutation Matrix
 
-Given a matrix $A \in \mathbb{R}^{m \times n}$, we want to decompose it into $AP = LU$, where $P$ is a permutation matrix, $L$ is a lower triangular matrix, and $U$ is an upper triangular matrix.  
+Given a matrix $A \in \mathbb{R}^{m \times n}$, we want to decompose it into $AP=LU$, where $P$ is a permutation matrix, $L$ is a lower triangular matrix, and $U$ is an upper triangular matrix.  
 
-$P$ is a permutation matrix, which does a column swap operation on any matrix that is multiplied by $P$. For example, swapping ith column and jth column can be represented by a permutation matrix $P$ such that $P_{ij} = P_{ji}= 1$ and $P_{ii} = P_{jj} = 0$.
+$P$ is a permutation matrix, which does a column swap operation on any matrix that is multiplied by $P$. For example, swapping ith column and jth column can be represented by a permutation matrix $P$ such that $P_{ij} = P_{ji}= 1$ and $P_{ii} = P_{jj} = 0$.  
 $$AP:=\overline{A}$$
 $$P:\begin{pmatrix}
 0 & 0 & \cdots  & 1(ith) & \cdots & 0 \\
