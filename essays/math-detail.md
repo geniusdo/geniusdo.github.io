@@ -37,8 +37,10 @@ Note that this change will cause different results from the usual LUP algorithm.
 
 Given a matrix $A \in \mathbb{R}^{m \times n}$, we want to decompose it into $AP=LU$, where $P$ is a permutation matrix, $L$ is a lower triangular matrix, and $U$ is an upper triangular matrix.  
 
-$P$ is a permutation matrix, which does a column swap operation on any matrix that is multiplied by $P$. For example, swapping ith column and jth column can be represented by a permutation matrix $P$ such that $P_{ij} = P_{ji}= 1$ and $P_{ii} = P_{jj} = 0$.
-$$ AP:=\overline{A} $$
+$P$ is a permutation matrix, which does a column swap operation on any matrix that is multiplied by $P$. For example, swapping ith column and jth column can be represented by a permutation matrix $P$ such that $P_{ij} = P_{ji}= 1$ and $P_{ii} = P_{jj} = 0$.  
+
+$$ AP:=\overline{A} $$  
+
 $$ P:\begin{pmatrix}\\
 0 & 0 & \cdots  & 1(ith) & \cdots & 0 \\
 0 & 1 & \cdots  & 0 & \cdots & 0 \\
@@ -54,7 +56,7 @@ Firstly, we perform partial pivoting on the matrix $A$, the permutation matrix i
 $$P_{2} =\begin{pmatrix}
 1 & \textbf{0}   \\
 \textbf{0} & P_{22} \\
- \end{pmatrix},$$
+ \end{pmatrix},$$  
 where $P_{22}$ is an $(n-1)\times(n-1)$ permutation matrix. So the overall permutation matrix is $P = P_{1}P_{2}$.  We can write the LUP decomposition as  
 $$AP = LU$$  
 $$\overline{A}P_{2} = LU$$  
@@ -77,7 +79,9 @@ $$\overline{\boldsymbol{a}}_{21} =\boldsymbol{l}_{21}$$
 $$\overline{\boldsymbol{a}}_{12}P_{22}=l_{11}\boldsymbol{u}_{12}$$  
 $$\overline{A}_{22}P_{22}=\boldsymbol{l}_{21}\boldsymbol{u}_{12}+{L}_{22}U_{22}$$  
 Substituting the first three equations above into the last one, we have  
-$$S_{22}P_{22}=(\overline{A}_{22}-\overline{\boldsymbol{a}}_{21}(\overline{a}_{11})^{-1}\overline{\boldsymbol{a}}_{12})P_{22}=L_{22}U_{22},$$
+
+$$S_{22}P_{22}=(\overline{A}_{22}-\overline{\boldsymbol{a}}_{21}(\overline{a}_{11})^{-1}\overline{\boldsymbol{a}}_{12})P_{22}=L_{22}U_{22},$$  
+
 where $S_{22}$ is the shur complement.  
 Recursively decompose $S_{22}$, resulting in $L_{22},U_{22}$ and $P_{22}$. Solve $L$ and $U$ by back substitution.  
 $$l_{11}=\overline{a}_{11}$$  
