@@ -39,7 +39,7 @@ Given a matrix $A \in \mathbb{R}^{m \times n}$, we want to decompose it into $AP
 
 $P$ is a permutation matrix, which does a column swap operation on any matrix that is multiplied by $P$. For example, swapping ith column and jth column can be represented by a permutation matrix $P$ such that $P_{ij} = P_{ji}= 1$ and $P_{ii} = P_{jj} = 0$.  
 $$AP:=\overline{A}$$
-$$P:\begin{pmatrix}
+$$P:\begin{pmatrix}\\
 0 & 0 & \cdots  & 1(ith) & \cdots & 0 \\
 0 & 1 & \cdots  & 0 & \cdots & 0 \\
 \vdots & \vdots & \ddots  & \vdots & \ddots & \vdots \\
