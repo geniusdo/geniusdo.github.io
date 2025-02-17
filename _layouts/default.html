@@ -34,14 +34,13 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/css/rouge/{{ site.rouge-theme}}">
     <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
     {% if site.mathjax %}
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
     <script type="text/javascript">
       MathJax = {
           tex: {
               inlineMath: [['$', '$'], ['\(', '\)']],
               displayMath: [['$$', '$$'], ['\[', '\]']]
-
           }
       };
     </script>
