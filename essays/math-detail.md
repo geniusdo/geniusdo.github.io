@@ -81,6 +81,7 @@ $$\begin{pmatrix}\overline{a}_{11} & \overline{\boldsymbol{a}}_{12}P_{22}\\
  \end{pmatrix}$$  
 
 Equating the corresponding entries, we have  
+
 $$\overline{a}_{11}=l_{11}$$  
 
 $$\overline{\boldsymbol{a}}_{21} =\boldsymbol{l}_{21}$$  
@@ -95,6 +96,7 @@ $$S_{22}P_{22}=(\overline{A}_{22}-\overline{\boldsymbol{a}}_{21}(\overline{a}_{1
 
 where $S_{22}$ is the shur complement.  
 Recursively decompose $S_{22}$, resulting in $L_{22},U_{22}$ and $P_{22}$. Solve $L$ and $U$ by back substitution.  
+
 $$l_{11}=\overline{a}_{11}$$  
 
 $$\boldsymbol{l}_{21}=\overline{\boldsymbol{a}}_{21}$$  
