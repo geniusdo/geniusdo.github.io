@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/micro-uav/micro_uav.jpg
+image: img/lang/lang.png
 title: "A Mongolian-English translator using Finnish as an intermediate language"
 date: 2021-01
 published: true
