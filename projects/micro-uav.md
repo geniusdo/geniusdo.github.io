@@ -4,7 +4,7 @@ type: project
 image: img/micro-uav/micro_uav.jpg
 title: "An Autonomous Inspection Micro UAV in Complex Indoor Environments"
 date: 2024
-published: true
+published: false
 labels:
   - State Estimation
   - Geometry Control
